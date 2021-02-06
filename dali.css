@@ -2,13 +2,13 @@
 Menu responsive
 */
 
-  /* header */
+/* header */
 
 a {
   color: #000;
 }
 
-header{
+header {
   margin: 0 auto;
   grid-area: header;
   background-color: #fff;
@@ -16,475 +16,484 @@ header{
   overflow: hidden;
   width: 100%;
   z-index: 10;
-  position:sticky;   
-    }
-    
-    nav ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      overflow: hidden;
-      background-color:#0000EC;
-     
-    }
-    
-    nav li a {
-      margin: 0 auto;       
-      padding: 20px 20px;
-      text-decoration: none;
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 16px;
-      color: #FFFFFF;       
-      line-height: 40px;
-      
-    }
+  position: sticky;
+}
 
-    #logo {
-      display: block;
-      float: left;
-      margin: 15px 0px 10px 16px;
-      font-size: 24px;
-      text-decoration: none;
-    }
-    
-    /* menu */
-    
-    nav .menu {
-      clear: both;
-      max-height: 0;
-      transition: max-height .2s ease-out;
-    }
-    
-    /* menu icon */
-    
-    nav .menu-icon {
-      cursor: pointer;
-      display: block;
-      float: right;
-      padding: 28px 20px;
-      position: relative;
-      user-select: none;
-    }
-    
-    nav .menu-icon .navicon {
-      background: #333;
-      display: block;
-      height: 2px;
-      position: relative;
-       width: 18px;
-    }
-    
-    nav .menu-icon .navicon:before,
-    nav .menu-icon .navicon:after {
-      background: #333;
-      content: '';
-      display: block;
-      height: 100%;
-      position: absolute;
-      transition: all .2s ease-out;
-      width: 100%;
-    }
-    
-    nav .menu-icon .navicon:before {
-      top: 5px;
-    }
-    
-    nav .menu-icon .navicon:after {
-      top: -5px;
-    }
-    
-    /* menu btn */
-    
-    nav .menu-btn {
-      display: none;
-    }
-    
-    nav .menu-btn:checked ~ .menu {
-      max-height: 240px;
-    }
-    
-    nav .menu-btn:checked ~ .menu-icon .navicon {
-      background: transparent;
-    }
-    
-    nav .menu-btn:checked ~ .menu-icon .navicon:before {
-      transform: rotate(-45deg);
-    }
-    
-    nav .menu-btn:checked ~ .menu-icon .navicon:after {
-      transform: rotate(45deg);
-    }
-    
-    nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-    nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-      top: 0;
-    }  
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #0000ec;
+}
 
+nav li a {
+  margin: 0 auto;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 40px;
+}
 
-    .invitadas{
-      display:flex;
-      flex-wrap: wrap;}
-    
-    .episodios{
-      display:flex;
-      flex-wrap:wrap;
-      background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-     background-color: #fff;
-     transform: skewY(-5deg);
-        width: 100%;
-        z-index:-1;}
-    
-        .episodioss{
-          transform: skewY(5deg);
-       z-index:1;        
-       margin-left: 64px;
-       margin-right: 64px;
-       display: inline;    }
-       
-       .episodios h2{
-       transform: skewY(5deg);
-       z-index:1;
-       padding:20px;
-       margin-top:100px;
-       }
-       .episodios  iframe{ 
-        width: 584px;
-        height: 232px;
-        align-content: center;
-        align-items:center;
-        margin: 36px;
-        }
-    .main input{
-      width: 288px;
-      height: 48px;
-      background: #00F3BB;
-    }
-    
-    
-    
-    .temas .iconos div {
-      display:flex;
-      justify-content: center;
-      text-align: center;
-    }
-    
+#logo {
+  display: block;
+  float: left;
+  margin: 15px 0px 10px 16px;
+  font-size: 24px;
+  text-decoration: none;
+}
 
-    footer div{
-      margin-left: 47px;
-      margin-right: 47px;
-      display:flex;
-      justify-content:center;
-    }
+/* menu */
 
-    .foot{
-      justify-content: space-around;
-    }
+nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
 
-    .fa-copyright{
-      margin-right:5px;
-     }
+/* menu icon */
 
+nav .menu-icon {
+  cursor: pointer;
+  display: block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
 
-    
-    .novedades{background-color: #fff;
-      background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-      transform: skewY(-5deg);
-      width: 100%;
-      z-index:-1;
-      /*width: 320px;*/
-      height: 341px;
-      align-content:center;}
-    
-    .novedades h1{transform: skewY(5deg);
-      z-index:1;        
-      margin-left: 64px;
-      margin-right: 64px;
-      display: inline-flex; }
-    
-    .novedades input{
-      width: 288px;
-      height: 48px;
-      transform: skewY(5deg);
-      z-index:1;
-      background: #00F3BB;
-      /*justify-content: center;*/}
-      
+nav .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 18px;
+}
 
-      .main h1{
-        font-family: IBMPlexSans;
-        font-size: 36px;
-        color: #060A24;
-        letter-spacing: 0;
-        line-height: 42px;
-      }
-    
-      .main h3{
-        font-family: IBMPlexMono;
-        font-size: 14px;
-        color: #060A24;
-        letter-spacing: 0;
-        line-height: 22px; 
-      }
+nav .menu-icon .navicon:before,
+nav .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
 
-      .punto{color: blue;
-        font-size:64px;}
-    
-      .tachada { text-decoration: line-through;}
-    
-    .iconos img{ align-items: center;}
+nav .menu-icon .navicon:before {
+  top: 5px;
+}
 
-    
-    
- @media (min-width: 48em) {
+nav .menu-icon .navicon:after {
+  top: -5px;
+}
 
+/* menu btn */
+
+nav .menu-btn {
+  display: none;
+}
+
+nav .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.invitadas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.episodios {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  background-color: #fff;
+  transform: skewY(-5deg);
+  width: 100%;
+  z-index: -1;
+}
+
+.episodioss {
+  transform: skewY(5deg);
+  z-index: 1;
+  margin-left: 64px;
+  margin-right: 64px;
+  display: inline;
+}
+
+.episodios h2 {
+  transform: skewY(5deg);
+  z-index: 1;
+  padding: 20px;
+  margin-top: 100px;
+}
+.episodios iframe {
+  width: 584px;
+  height: 232px;
+  align-content: center;
+  align-items: center;
+  margin: 36px;
+}
+.main input {
+  width: 288px;
+  height: 48px;
+  background: #00f3bb;
+}
+
+.temas .iconos div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer div {
+  margin-left: 47px;
+  margin-right: 47px;
+  display: flex;
+  justify-content: center;
+}
+
+.foot {
+  justify-content: space-around;
+}
+
+.fa-copyright {
+  margin-right: 5px;
+}
+
+.novedades {
+  background-color: #fff;
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  transform: skewY(-5deg);
+  width: 100%;
+  z-index: -1;
+  /*width: 320px;*/
+  height: 341px;
+  align-content: center;
+}
+
+.novedades h1 {
+  transform: skewY(5deg);
+  z-index: 1;
+  margin-left: 64px;
+  margin-right: 64px;
+  display: inline-flex;
+}
+
+.novedades input {
+  width: 288px;
+  height: 48px;
+  transform: skewY(5deg);
+  z-index: 1;
+  background: #00f3bb;
+  /*justify-content: center;*/
+}
+
+.main h1 {
+  font-family: IBMPlexSans;
+  font-size: 36px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+
+.main h3 {
+  font-family: IBMPlexMono;
+  font-size: 14px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.punto {
+  color: blue;
+  font-size: 64px;
+}
+
+.tachada {
+  text-decoration: line-through;
+}
+
+.iconos img {
+  align-items: center;
+}
+
+@media (min-width: 48em) {
   /* navbar */
-  header{
-      height: 80px;
-      /*position:absolute;*/
-    }
-      
+  header {
+    height: 80px;
+    /*position:absolute;*/
+  }
+
   nav li {
     float: left;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
   nav li a {
     font-size: 16px;
     letter-spacing: 0;
     line-height: 28px;
     padding: 20px 30px;
-    color: #060A24;
+    color: #060a24;
   }
 
   nav li a:hover,
-    nav .menu-btn:hover {
-      font-size: 16px;
-      color: #00F3BB;
-      text-decoration: line-through;
-      letter-spacing: 0;
-      line-height: 28px;
-    }
-    
-    nav li a:active,
-    nav .menu-btn:active { 
-      font-size: 16px;
-      color: rgba(6,10,36,0.56);
-      text-decoration: line-through;
-      letter-spacing: 0;
-      line-height: 28px;
-    }
-    
-    nav .menu {
+  nav .menu-btn:hover {
+    font-size: 16px;
+    color: #00f3bb;
+    text-decoration: line-through;
+    letter-spacing: 0;
+    line-height: 28px;
+  }
+
+  nav li a:active,
+  nav .menu-btn:active {
+    font-size: 16px;
+    color: rgba(6, 10, 36, 0.56);
+    text-decoration: line-through;
+    letter-spacing: 0;
+    line-height: 28px;
+  }
+
+  nav .menu {
     margin: 26px auto;
     clear: none;
     float: right;
     max-height: none;
-   }
-    nav .menu-icon {
+  }
+  nav .menu-icon {
     display: none;
   }
 
-   #logo {
+  #logo {
     display: block;
     margin: 30px 0px 22px 100px;
-    font-size: 36px;  
-  }
-  
-    body{
-      margin:0;
-      padding:0;
-      font-family:"IBM Plex Mono","IBM Plex Sans", sans-serif;
-      letter-spacing: 0;}
-  
-      .tachada { text-decoration: line-through;}
-  
-      .punto{color: blue;
-      font-size:64px;}
-  
-          /* TAMAÑO DE LETRA*/
-  
-          p{
-              font-size: 16px;
-              letter-spacing: 0;}
-  
-  
-          h1{font-size: 64px;
-              letter-spacing: 0;
-              /*display:flex;*/}
-  
-  h2{font-size:48px;
-  letter-spacing: 0;}
-  
-  h3{
-      font-size: 16px;
-      letter-spacing: 0;}
-      
-          /* MAIN*/
-         body .main{
-              width: 1440px;
-              height: 469px;
-              margin-left:200px;
-              padding-top: 100px;
-            }
-  
-          .main input:hover{
-              background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    font-size: 36px;
   }
 
-  
-              .main input{
-                  width: 226px;
-                   height: 56px;
-                  margin-top:56px;
-                  background: #00F3BB;}
-  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Mono", "IBM Plex Sans", sans-serif;
+    letter-spacing: 0;
+  }
+
+  .tachada {
+    text-decoration: line-through;
+  }
+
+  .punto {
+    color: blue;
+    font-size: 64px;
+  }
+
+  /* TAMAÑO DE LETRA*/
+
+  p {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  h1 {
+    font-size: 64px;
+    letter-spacing: 0;
+    /*display:flex;*/
+  }
+
+  h2 {
+    font-size: 48px;
+    letter-spacing: 0;
+  }
+
+  h3 {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  /* MAIN*/
+  body .main {
+    width: 1440px;
+    height: 469px;
+    margin-left: 200px;
+    padding-top: 100px;
+  }
+
+  .main input:hover {
+    background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+  }
+
+  .main input {
+    width: 226px;
+    height: 56px;
+    margin-top: 56px;
+    background: #00f3bb;
+  }
+
   /* SECCION EPISODIOS*/
-      
-      
-      
-  .episodios{
+
+  .episodios {
     background-color: #fff;
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
     transform: skewY(-5deg);
     width: 100%;
-    z-index:-1;
-}
-
-
-.episodioss{
-   transform: skewY(5deg);
-z-index:1;        
-margin-left: 64px;
-margin-right: 64px;
-display: inline-flex;    }
-
-.episodios h2{
-margin-left: 200px;
-transform: skewY(5deg);
-z-index:1;
-padding:20px;
-margin-top:100px;
-}
-
-.episodios  iframe{ 
-width: 584px;
-height: 232px;
-align-content: center;
-align-items:center;
-margin: 36px;
-}
-
-  
-  /*DE DONDE VENIMOS*/
-  
-  .dedondevenimos{display:flex;
-  width: 1440px;
-  height: 1042.6px;
-  
+    z-index: -1;
   }
-  
-  .dedondevenimos .texto h1{
-      font-size: 48px;
-      font-family: IBMPlexSans;
-      color: #060A24;
-      letter-spacing: 0;}
-  .dedondevenimos .texto p{
+
+  .episodioss {
+    transform: skewY(5deg);
+    z-index: 1;
+    margin-left: 64px;
+    margin-right: 64px;
+    display: inline-flex;
+  }
+
+  .episodios h2 {
+    margin-left: 200px;
+    transform: skewY(5deg);
+    z-index: 1;
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+  .episodios iframe {
+    width: 584px;
+    height: 232px;
+    align-content: center;
+    align-items: center;
+    margin: 36px;
+  }
+
+  /*DE DONDE VENIMOS*/
+
+  .dedondevenimos {
+    display: flex;
+    width: 1440px;
+    height: 1042.6px;
+  }
+
+  .dedondevenimos .texto h1 {
+    font-size: 48px;
+    font-family: IBMPlexSans;
+    color: #060a24;
+    letter-spacing: 0;
+  }
+  .dedondevenimos .texto p {
     font-family: IBMPlexMono;
     font-size: 16px;
-    color: #060A24;
+    color: #060a24;
     letter-spacing: 0;
     line-height: 24px;
   }
-  .dedondevenimos .imagen{
-  display:flex;
-  /*top:-20px;*/
-  
+  .dedondevenimos .imagen {
+    display: flex;
+    /*top:-20px;*/
   }
-  .dedondevenimos .texto{
-      margin-top:200px ;
-      text-align: justify;
+  .dedondevenimos .texto {
+    margin-top: 200px;
+    text-align: justify;
   }
-  
-    /*IMAGENES*/
-    
-    .tituloinv{margin-left: 200px;}
-    
-    
-    .invitadas{
-      width: 1440px;
-      height: 728px;}
-    
-     
-  .invitadas div{display: inline-flex;}
-  
-      .invitadas img{
-          width: 480px;
-          height: 364px;
-          align-content: center;}
-  
-          /*TEMAS*/
-  
-      .temas {
-      width:1440px;
-      height: 426px;
-      display: grid;
-      grid-template-rows: 220px, auto,220px ;
-      
-      }
-      .temas .titulo {
-  
-          margin-top:15px;
-          display:grid;
-          width:586px;
-          height: 62px;
-          /*margin-bottom: 69px;*/;
-          
-          }
-      .temas .iconos{
-          display:flex;
-          align-items: center;
-          justify-content: center;
-          /*margin-left:150px;/*
-          margin-top:182px;
-          /*align-content: center;*/}
-  
-          .temas .iconos p{
-              font-weight: bold;
-          }
-         
-              /*NOVEDADES*/
-         .novedades{
-          width: 1440px;
-          height:518px;
-          background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-          transform: skewY(0deg, 5deg);
-      }
-      
-      
-      
-      .novedades input{
-          margin: 50px;
-          padding:20px;
-          background: #00F3BB;
-  }
-      .novedades input:hover{
-          background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-      }
-  
-          /*FOOTER*/
-  footer{
-    margin-top:50px;
-      display:inline-flex;
-      width: 1440px;
-      height: 80px;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-  }
-  
-  footer i{margin:15px;}   
-}
 
-  
+  /*IMAGENES*/
+
+  .tituloinv {
+    margin-left: 200px;
+  }
+
+  .invitadas {
+    width: 1440px;
+    height: 728px;
+  }
+
+  .invitadas div {
+    display: inline-flex;
+  }
+
+  .invitadas img {
+    width: 480px;
+    height: 364px;
+    align-content: center;
+  }
+
+  /*TEMAS*/
+
+  .temas {
+    width: 1440px;
+    height: 426px;
+    display: grid;
+    grid-template-rows: 220px, auto, 220px;
+  }
+  .temas .titulo {
+    margin-top: 15px;
+    display: grid;
+    width: 586px;
+    height: 62px;
+    /*margin-bottom: 69px;*/
+  }
+  .temas .iconos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*margin-left:150px;/*
+          margin-top:182px;
+          /*align-content: center;*/
+  }
+
+  .temas .iconos p {
+    font-weight: bold;
+  }
+
+  /*NOVEDADES*/
+  .novedades {
+    width: 1440px;
+    height: 518px;
+    background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: skewY(0deg, 5deg);
+  }
+
+  .novedades input {
+    margin: 50px;
+    padding: 20px;
+    background: #00f3bb;
+  }
+  .novedades input:hover {
+    background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+  }
+
+  /*FOOTER*/
+  footer {
+    margin-top: 50px;
+    display: inline-flex;
+    width: 1440px;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer i {
+    margin: 15px;
+  }
+}
